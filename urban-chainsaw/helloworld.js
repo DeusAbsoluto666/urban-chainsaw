@@ -117,10 +117,10 @@ let varNull = null
 console.log(minhaVar)
 console.log(varNull)
 
-console.log("Quanfo o undefined está em sua forma pura")
+console.log("Quanto o undefined está em sua forma pura")
 
 let numero8 = 3
-let texto = "Alrua"
+let texto = "Alura"
 
 console.log(typeof numero)
 console.log(typeof texto)
@@ -128,3 +128,24 @@ console.log(typeof texto)
 
 console.log(typeof minhaVar)
 console.log(typeof varNull)
+
+//conversão implicita
+const numeroNumber = 90
+const numeroString = "90"
+
+console.log(numeroNumber == numeroString)
+console.log(numeroNumber === numeroString)
+console.log(numeroNumber + numeroString)
+
+//conversão explicita
+    //Number() - Converte para número
+    //String() - Converte para uma string
+console.log(numeroNumber + Number(numeroString))
+
+const numeroConvertido = Number(numeroString)
+
+console.log(numeroNumber + numeroConvertido)
+
+const numeroConvertidoErrado = Number("456a")
+
+console.log(numeroNumber + numeroConvertidoErrado)
